@@ -1,4 +1,4 @@
-// pages/login.ts
+// pages/index/index.ts
 Page({
 
   /**
