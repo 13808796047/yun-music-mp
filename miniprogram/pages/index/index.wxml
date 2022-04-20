@@ -1,2 +1,22 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="page">
+  <view class="header">
+    <image class="header-bg" src="../../images/header-bg.png" />
+    <view class="user-box">
+      <view class="avatar-box">
+        <view>xxx</view>
+      </view>
+      <view class="notification-box">
+        <image class="bell-icon" src="../../images/bell.svg"></image>
+        <image class="dot-icon" src="../../images/dot.svg"></image>
+        <view class="dot-num">3</view>
+      </view>
+    </view>
+  </view>
+  <scroll-view class="category-banner-list" scroll-x="">
+    <view style="{{'width'+(categoryBannerList.length*320+40)+'rpx'}}">
+      <view wx:for="{{categoryBannerList}}" wx:key="index">
+        <image src="{{item.image}}"></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>
